@@ -51,6 +51,7 @@ let queries = [|"QuerySubscribedTweets"; "QueryHashtags"; "QueryMentions"|]
 let hashtags = [|"#COP5615isgreat"; "#FSharp"; "#Pikachu"; "#Pokemon"; "#GoGators"; "#MarstonLibrary"|]
 let search = [|"DOS"; "Coding"; "Pokemon"; "UF"; "Guess"|]
 let tweets = [|"Doing DOS rn, talk later!"; "Coding takes time!"; "Watching Pokemon!"; "Playing Pokemon Go!" ; "UF is awesome!"; "Guess what?"|]
+let userRegexMatch = "User([0-9]*)"
 let random = System.Random()
 let system = System.create "system" <| ConfigurationFactory.Default()
 
@@ -65,17 +66,17 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
     let mutable oldTime = 0.0
     let mutable alive = true
 
-    let searchTweets receivedTweets searchString=
+    let searchTweets (receivedTweets:string[]) (searchString:string)=
         let mutable searchedTweets = Array.empty
         for newTweets in receivedTweets do
-            let mutable WordIndex = newTweets.IndexOf(searchString)
-            if WordIndex <> -1 then
+            let mutable wordIndex = newTweets.IndexOf(searchString)
+            if wordIndex <> -1 then
                 searchedTweets <- Array.concat [| searchedTweets ; [|newTweets|] |]
         searchedTweets
 
     let rec loop() = actor {
 
-        if oldTime - float(selfStopwatch.Elapsed.TotalSeconds) > 1.0 && not alive then
+        if float(selfStopwatch.Elapsed.TotalSeconds) - oldTime > 1.0 && not alive then
             oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
             alive <- true
             engineActorRef.[0] <! GoOnline selfId
@@ -101,8 +102,9 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
                 elif actions.[actionId] = "query" then
                     mailbox.Self <! QueryInit
             let mutable timeNow = float(selfStopwatch.Elapsed.TotalMilliseconds)
-            if timeNow - float(selfStopwatch.Elapsed.TotalMilliseconds) > 10.0 then
-                mailbox.Self <! StartUser
+            while float(selfStopwatch.Elapsed.TotalMilliseconds) - timeNow < 10.0 do
+                0|> ignore
+            mailbox.Self <! StartUser
 
 
         | GoOffline(myId) ->
@@ -118,7 +120,7 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             if randomHashtagId < hashtags.Length then
                 tweetString <- tweetString + hashtags.[randomHashtagId]
             if mentionUserBoolean = 1 then
-                let mutable getnumNodes = engineActorRef.[0] <? getnumNodes
+                let mutable getnumNodes = engineActorRef.[0] <? GetNumNodes
                 let numNodes = Async.RunSynchronously (getnumNodes, 1000)
                 let randomUserNameId = random.Next(numNodes)
                 let mutable randomUserName = sprintf "@User%i" randomUserNameId
@@ -184,7 +186,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
     let mutable subscribers = Map.empty
     let mutable tweetsToBeSent = Map.empty
     let mutable userTweetNumber = Array.empty
-    let mutable offlineUser = Array.empty
+    let mutable offlineUsers = Array.empty
     let mutable hashtagTweets = Map.empty
     let mutable tweetsReceived = 0
     let selfStopwatch = System.Diagnostics.Stopwatch()
@@ -224,6 +226,11 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                     userFound <- 1
         userTweetNumber
                 
+    let matchSample r m =
+        let r = Regex(r)
+        let m1 = r.Match m
+        let idFound = m1.Groups.[1] |> string |> int
+        idFound
 
 
     let rec loop() = actor {
@@ -234,27 +241,28 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
         | StartEngine ->
 
-            userTweetNumber <- Array.zeroCreate (numNodes) 
-            for i in 0..numNodes do
+            for i in 0..numNodes-1 do
                 let mutable workerName = sprintf "User%i" i
                 userTweet <- userTweet.Add(workerName, [||])
                 subscribers <- subscribers.Add(workerName, [||])
                 tweetsToBeSent <- tweetsToBeSent.Add(workerName, [||])
+
             selfStopwatch.Start()
 
         | GetNumNodes ->
             sender <! numNodes
 
-        | Tweet(UserId, tweetString) ->
+        | Tweet(userId, tweetString) ->
             tweetsReceived <- tweetsReceived + 1
             if tweetsReceived > numTweets then
                 ALL_COMPUTATIONS_DONE <- 1
-            let mutable userName = (sprintf "User%i" UserId)
+            let mutable userName = sprintf "User%i" userId
             let mutable allSubscribers = subscribers.[userName]
             let userMentions = searchMentions tweetString
             for mentioned in userMentions do
-                allSubscribers <- allSubscribers |> Array.filter ((<>) mentioned )
-                allSubscribers <- Array.concat [| allSubscribers ; [|mentioned|] |]
+                let mentionedId = matchSample mentioned userRegexMatch
+                allSubscribers <- allSubscribers |> Array.filter ((<>) mentionedId )
+                allSubscribers <- Array.concat [| allSubscribers ; [|mentionedId|] |]
 
             let userHashtags = searchHashtags tweetString
             for hashtags in userHashtags do
@@ -267,55 +275,57 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 let mutable userName = (sprintf "User%i" subs)
                 let mutable userFoundOffline = false
                 for offlineUsersCurrent in offlineUsers do
-                    if userFoundOffline = false then
-                        if offlineUsersCurrent = Subs then
-                            userFoundOffline = true
-                if userFoundOffline = true then
+                    if not userFoundOffline then
+                        if offlineUsersCurrent = subs then
+                            userFoundOffline <- true
+                if userFoundOffline then
                     let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
                     usertweetsToBeSent <- usertweetsToBeSent |> Array.filter ((<>) tweetString )
                     usertweetsToBeSent <- Array.concat [| usertweetsToBeSent ; [|tweetString|] |]
-                    tweetsToBeSent <- tweetsToBeSent.Add(Subs, usertweetsToBeSent)
+                    tweetsToBeSent <- tweetsToBeSent.Add(userName, usertweetsToBeSent)
                 else
                     UserActorMapping.[userName] <! ReceiveTweet(tweetString)
                     
         | Retweet(userName) ->
             // choose a random user and ask them for a random tweet
-            let mutable randomUser = random.Next(numNodes)
-            UserActorMapping.[randomUser] <! SendRandomTweet(userName, "")
+            let mutable randomUserId = random.Next(numNodes)
+            let mutable randomUserName = sprintf "User%i" randomUserId
+            UserActorMapping.[randomUserName] <! SendRandomTweet(userName, "")
 
         | SendRandomTweet(userName, newUserTweet) ->
-            UserActorMapping.[userName] <! RetweetReceive(newUserTweet)
+            if newUserTweet <> "" then
+                UserActorMapping.[userName] <! RetweetReceive(newUserTweet)
 
-        | Subscribe(UserId) ->
+        | Subscribe(userId) ->
 
             let mutable allUsers = [|0..numNodes|]
-            let mutable userName = (sprintf "User%i" UserId)
+            let mutable userName = sprintf "User%i" userId
             let mutable userSubscribers = subscribers.[userName]
             if userSubscribers.Length < numNodes - 2 then
                 // remove already subscribed indexes and choose from among the remaining ones
                 for i in userSubscribers do
                     allUsers <- allUsers |> Array.filter ((<>) i )
-                allUsers <- allUsers |> Array.filter ((<>) UserId )
+                allUsers <- allUsers |> Array.filter ((<>) userId )
                 let mutable randomNewSub = random.Next(allUsers.Length)
                 userSubscribers <- Array.concat [| userSubscribers ; [|randomNewSub|] |] 
                 subscribers <- subscribers.Add(userName, userSubscribers)
 
-        | GoOffline(UserId) ->
-            offlineUsers <- offlineUsers |> Array.filter ((<>) UserId )
-            offlineUsers <- Array.concat [| offlineUsers ; [|UserId|] |] 
-            UserActorRef.[UserId] <! GoOffline(UserId)
+        | GoOffline(userId) ->
+            offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
+            offlineUsers <- Array.concat [| offlineUsers ; [|userId|] |] 
+            UserActorRef.[userId] <! GoOffline(userId)
 
-        | GoOnline(UserId) ->
-            let mutable userName = (sprintf "User%i" UserId)
+        | GoOnline(userId) ->
+            let mutable userName = sprintf "User%i" userId
             let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
-            offlineUsers <- offlineUsers |> Array.filter ((<>) UserId )
+            offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
             for tweet in usertweetsToBeSent do
                 UserActorMapping.[userName] <! ReceiveTweet(tweet)
             tweetsToBeSent <- tweetsToBeSent.Add(userName, [||])
 
-        | QueryHashtags(UserId, HashtagQuery) ->
-            let mutable userName = (sprintf "User%i" UserId)
-            let mutable tweetsFound = hashtagTweets.[HashtagQuery]
+        | QueryHashtags(userId, hashtagQuery) ->
+            let mutable userName = sprintf "User%i" userId
+            let mutable tweetsFound = hashtagTweets.[hashtagQuery]
             UserActorMapping.[userName] <! ReceiveQueryHashtags(tweetsFound)
 
         | _-> 0|>ignore 
@@ -345,37 +355,43 @@ let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
             engineActorRef.[0] <! StartEngine
 
             UserActorRef <- Array.zeroCreate (numNodes)
+            printfn "Done with engine"
 
             for i in 0..numNodes-1 do
-                let mutable workerName = (sprintf "User%i" i)
-                let mutable userActor = spawn mailbox workerName (MyUserActor workerName i)
+                let mutable workerName = sprintf "User%i" i
+                let mutable userActor = spawn system workerName (MyUserActor workerName i)
                 userActor <! Register
                 UserActorRef.[i] <- userActor
-                UserActorMapping <- UserActorMapping.Add(workerName, i)
+                UserActorMapping <- UserActorMapping.Add(workerName, userActor)
 
-            // create Engine
-            let engineActor = spawn system "engineActor" (MyengineActor numNodes numTweets)
+            selfStopwatch.Start()
+            oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
 
-            engineActorRef <- Array.zeroCreate 1
-            engineActorRef.[0] <- engineActor
+            while float(selfStopwatch.Elapsed.TotalSeconds) - oldTime < 5.0 do
+                0|> ignore
 
             // Send signal to all users to start their processes
             for i in 0..numNodes-1 do
                 UserActorRef.[i] <! StartUser 
+
+            printfn "Done with users"
+
             mailbox.Self <! SimulateBoss
-            selfStopwatch.Start()
+            
 
         | SimulateBoss ->
 
             // choose random num/10 nodes and make them offline
             for i in 0..numNodes/10 do
                 let mutable offlineNodeId = random.Next(numNodes)
+                printfn "Setting %i offline" offlineNodeId
                 engineActorRef.[0] <! GoOffline(offlineNodeId)
                 
 
-            if oldTime - float(selfStopwatch.Elapsed.TotalSeconds) > 1.0 then
-                oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
-                mailbox.Self <! SimulateBoss
+            while float(selfStopwatch.Elapsed.TotalSeconds) - oldTime < 1.0 do
+                0|> ignore
+            oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
+            mailbox.Self <! SimulateBoss
                 
         | StopBoss ->
             ALL_COMPUTATIONS_DONE <- 1
@@ -388,7 +404,7 @@ let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
 
 // main function used to take in parameters
-[<EntryPoint>]
+//[<EntryPoint>]
 let main argv =
     let numNodes = ((Array.get argv 1) |> int)
     let numTweets = ((Array.get argv 2) |> int)
@@ -399,10 +415,12 @@ let main argv =
     bossActorRef.[0] <- bossActor
     bossActorRef.[0] <! StartBoss
 
+    printfn "Done with boss"
+
     while(ALL_COMPUTATIONS_DONE = 0) do
         0|>ignore
 
     system.Terminate() |> ignore
     0
 
-//main fsi.CommandLineArgs
+main fsi.CommandLineArgs
