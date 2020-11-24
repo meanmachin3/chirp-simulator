@@ -11,10 +11,6 @@ open System.Diagnostics
 open System.Text.RegularExpressions
 
 let mutable ALL_COMPUTATIONS_DONE = 0
-let mutable bossActorRef = Array.empty
-let mutable engineActorRef = Array.empty
-let mutable UserActorRef = Array.empty
-let mutable UserActorMapping = Map.empty
 
 // Define the type of messages this program can send or receive
 type MyMessage =
@@ -43,7 +39,7 @@ type MyMessage =
 | DeliverTweet of string[]
 | GoOffline of int
 | GoOnline of int
-| GetNumNodes
+| GetNumNodes of int*int
 
 
 let actions = [|"tweet"; "tweet"; "subscribe"; "retweet"; "query"|]
@@ -53,7 +49,14 @@ let search = [|"DOS"; "Coding"; "Pokemon"; "UF"; "Guess"|]
 let tweets = [|"Doing DOS rn, talk later!"; "Coding takes time!"; "Watching Pokemon!"; "Playing Pokemon Go!" ; "UF is awesome!"; "Guess what?"|]
 let userRegexMatch = "User([0-9]*)"
 let random = System.Random()
-let system = System.create "system" <| ConfigurationFactory.Default()
+let config =
+    Configuration.parse
+        @"akka {
+                log-dead-letters = off
+            }
+        }"
+let system = System.create "system" (config)
+//<| ConfigurationFactory.Default()
 
 
 let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) = 
@@ -67,7 +70,7 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
     let mutable alive = true
 
     let searchTweets (receivedTweets:string[]) (searchString:string)=
-        let mutable searchedTweets = Array.empty
+        let mutable searchedTweets = Array.create 0 ""
         for newTweets in receivedTweets do
             let mutable wordIndex = newTweets.IndexOf(searchString)
             if wordIndex <> -1 then
@@ -76,10 +79,12 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
 
     let rec loop() = actor {
 
-        if float(selfStopwatch.Elapsed.TotalSeconds) - oldTime > 1.0 && not alive then
+        if float(selfStopwatch.Elapsed.TotalSeconds) - oldTime > 0.5 && not alive then
             oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
             alive <- true
-            engineActorRef.[0] <! GoOnline selfId
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! GoOnline selfId
+            printfn "Setting %d online" selfId
 
 
         let! message = mailbox.Receive()
@@ -90,7 +95,6 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             // create Engine and Peers
 
         | StartUser ->
-
             if alive then
                 let mutable actionId = random.Next(actions.Length)
                 if actions.[actionId] = "tweet" then
@@ -113,63 +117,89 @@ let MyUserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
                 oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
 
         | TweetInit ->
+            let mutable mentionUserBoolean = random.Next(2)
+            if mentionUserBoolean = 1 then
+                let destinationRef = select ("akka://system/user/engineActor") system
+                destinationRef <! GetNumNodes(0, selfId)
+            else
+                let mutable randomMessageId = random.Next(tweets.Length)
+                let mutable randomHashtagId = random.Next(hashtags.Length*2)
+                if randomMessageId < tweets.Length then
+                    let mutable tweetString = tweets.[randomMessageId]
+                    if randomHashtagId < hashtags.Length then
+                        tweetString <- tweetString + hashtags.[randomHashtagId]
+                    selfTweets <- Array.concat [| selfTweets ; [|tweetString|] |]
+                    printfn "New Tweet from %s is %s" selfName tweetString
+                    let destinationRef = select ("akka://system/user/engineActor") system
+                    destinationRef <! Tweet(selfId, tweetString)
+
+        | GetNumNodes(totalNodes, dummyId) ->
             let mutable randomMessageId = random.Next(tweets.Length)
             let mutable randomHashtagId = random.Next(hashtags.Length*2)
-            let mutable mentionUserBoolean = random.Next(2)
-            let mutable tweetString = tweets.[randomMessageId]
-            if randomHashtagId < hashtags.Length then
-                tweetString <- tweetString + hashtags.[randomHashtagId]
-            if mentionUserBoolean = 1 then
-                let mutable getnumNodes = engineActorRef.[0] <? GetNumNodes
-                let numNodes = Async.RunSynchronously (getnumNodes, 1000)
-                let randomUserNameId = random.Next(numNodes)
-                let mutable randomUserName = sprintf "@User%i" randomUserNameId
-                tweetString <- tweetString + randomUserName
-            selfTweets <- Array.concat [| selfTweets ; [|tweetString|] |]
-            printfn "New Tweet from %s is %s" selfName tweetString
-            engineActorRef.[0] <! Tweet(selfId, tweetString)
+            if randomMessageId < tweets.Length then
+                let mutable tweetString = tweets.[randomMessageId]
+                if randomHashtagId < hashtags.Length then
+                    tweetString <- tweetString + hashtags.[randomHashtagId]
+                let randomUserNameId = random.Next(totalNodes)
+                if randomUserNameId < totalNodes then
+                    let mutable randomUserName = sprintf "@User%i" randomUserNameId
+                    tweetString <- tweetString + randomUserName
+                selfTweets <- Array.concat [| selfTweets ; [|tweetString|] |]
+                printfn "New Tweet from %s is %s" selfName tweetString
+                let destinationRef = select ("akka://system/user/engineActor") system
+                destinationRef <! Tweet(selfId, tweetString)
 
         | ReceiveTweet(newTweet) ->
             printfn "Received Tweet %s" newTweet
             receivedTweets <- Array.concat [| receivedTweets ; [|newTweet|] |]
 
         | RetweetInit ->
-            engineActorRef.[0] <! Retweet(selfName)
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! Retweet(selfName)
 
         | RetweetReceive(newTweet) ->
             printfn "Retweet Tweet from %s is %s" selfName newTweet
-            engineActorRef.[0] <! Tweet(selfId, newTweet)
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! Tweet(selfId, newTweet)
 
         | SendRandomTweet(userName, userTweet) ->
-            engineActorRef.[0] <! SendRandomTweet(userName, selfTweets.[random.Next(selfTweets.Length)])
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! SendRandomTweet(userName, selfTweets.[random.Next(selfTweets.Length)])
 
         | SubscribeInit ->
-            engineActorRef.[0] <! Subscribe(selfId)
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! Subscribe(selfId)
 
         | QueryInit ->
             let mutable randomQueryId = random.Next(queries.Length)
-            if queries.[randomQueryId] = "QuerySubscribedTweets" then
-                mailbox.Self <! QuerySubscribedTweets
-            elif queries.[randomQueryId] = "QueryHashtags" then
-                mailbox.Self <! QueryHashtags(0, "")
-            elif queries.[randomQueryId] = "QueryMentions" then
-                mailbox.Self <! QueryMentions
+            if randomQueryId < queries.Length then
+                if queries.[randomQueryId] = "QuerySubscribedTweets" then
+                    mailbox.Self <! QuerySubscribedTweets
+                elif queries.[randomQueryId] = "QueryHashtags" then
+                    mailbox.Self <! QueryHashtags(0, "")
+                elif queries.[randomQueryId] = "QueryMentions" then
+                    mailbox.Self <! QueryMentions
 
         | QuerySubscribedTweets ->
-            let mutable randomsearchString = search.[random.Next(search.Length)]
-            let mutable tweetsFound = searchTweets receivedTweets randomsearchString
-            printfn "Tweets found : %A" tweetsFound
+            let mutable randomSearchId = random.Next(search.Length)
+            if randomSearchId < search.Length then
+                let mutable randomsearchString = search.[randomSearchId]
+                let mutable tweetsFound = searchTweets receivedTweets randomsearchString
+                printfn "QuerySubscribedTweets found : %A" tweetsFound
 
         | QueryHashtags(someDummyNumber, someDummyString) ->
-            engineActorRef.[0] <! QueryHashtags(selfId, hashtags.[random.Next(hashtags.Length)])
+            let destinationRef = select ("akka://system/user/engineActor") system
+            let mutable randomHashtagId = random.Next(hashtags.Length)
+            if randomHashtagId < hashtags.Length then
+                destinationRef <! QueryHashtags(selfId, hashtags.[randomHashtagId])
 
         | ReceiveQueryHashtags(tweetsFound) ->
-            printfn "Tweets found : %A" tweetsFound
+            printfn "ReceiveQueryHashtagsTweets found : %A" tweetsFound
 
         | QueryMentions ->
             let mutable myMention = "@" + selfName
             let mutable tweetsFound = searchTweets receivedTweets myMention
-            printfn "Tweets found : %A" tweetsFound
+            printfn "QueryMentionsTweets found : %A" tweetsFound
 
         |_ -> 0|>ignore
 
@@ -182,48 +212,55 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
     let numNodes = numNodesVal 
     let numTweets = numTweetsVal
-    let mutable userTweet = Map.empty
     let mutable subscribers = Map.empty
     let mutable tweetsToBeSent = Map.empty
-    let mutable userTweetNumber = Array.empty
     let mutable offlineUsers = Array.empty
     let mutable hashtagTweets = Map.empty
     let mutable tweetsReceived = 0
-    let selfStopwatch = System.Diagnostics.Stopwatch()
-    let mutable oldTime = 0.0
+    let selfStopwatchEngine = System.Diagnostics.Stopwatch()
 
     let searchMentions newTweet=
         let mutable newUser = ""
-        let mutable userTweetNumber = Array.empty
+        let mutable userTweetNumber = Array.create 0 ""
         let mutable userFound = 0
         for c in newTweet do
             if userFound = 0 && c = '@' then
                 userFound <- 1
-            elif userFound = 1 && c <> '@' then
-                newUser <- newUser + string(c)
             elif userFound = 1 && (c = ' ' || c = '@' || c = '#') then
-                userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
+                newUser <- newUser.Trim()
+                if newUser <> "" then
+                    userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
                 userFound <- 0
                 newUser <- ""
                 if c = '@' then
                     userFound <- 1
+            elif userFound = 1 && c <> '@' then
+                newUser <- newUser + string(c)
+        newUser <- newUser.Trim()
+        if newUser <> "" then
+            userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
         userTweetNumber
 
     let searchHashtags newTweet=
         let mutable newUser = ""
-        let mutable userTweetNumber = Array.empty
+        let mutable userTweetNumber = Array.create 0 ""
         let mutable userFound = 0
         for c in newTweet do
             if userFound = 0 && c = '#' then
                 userFound <- 1
-            elif userFound = 1 && c <> '#' then
-                newUser <- newUser + string(c)
             elif userFound = 1 && (c = ' ' || c = '@' || c = '#') then
-                userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
+                newUser <- newUser.Trim()
+                if newUser <> "" then
+                    userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
                 userFound <- 0
                 newUser <- ""
                 if c = '#' then
                     userFound <- 1
+            elif userFound = 1 && c <> '#' then
+                newUser <- newUser + string(c)
+        newUser <- newUser.Trim()
+        if newUser <> "" then
+            userTweetNumber <- Array.concat [| userTweetNumber ; [|newUser|] |]
         userTweetNumber
                 
     let matchSample r m =
@@ -232,6 +269,11 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
         let idFound = m1.Groups.[1] |> string |> int
         idFound
 
+    let stripchars chars str =
+        Seq.fold
+            (fun (str: string) chr ->
+            str.Replace(chr |> Char.ToUpper |> string, "").Replace(chr |> Char.ToLower |> string, ""))
+            str chars
 
     let rec loop() = actor {
 
@@ -243,90 +285,112 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
             for i in 0..numNodes-1 do
                 let mutable workerName = sprintf "User%i" i
-                userTweet <- userTweet.Add(workerName, [||])
-                subscribers <- subscribers.Add(workerName, [||])
-                tweetsToBeSent <- tweetsToBeSent.Add(workerName, [||])
+                subscribers <- subscribers.Add(workerName, [|-1|])
+                tweetsToBeSent <- tweetsToBeSent.Add(workerName, [|""|])
+            hashtagTweets <- hashtagTweets.Add("", [|""|])
+            selfStopwatchEngine.Start()
 
-            selfStopwatch.Start()
-
-        | GetNumNodes ->
-            sender <! numNodes
+        | GetNumNodes(dummyValue, userId) ->
+            let destinationRef = select ("akka://system/user/User"+ (userId |> string)) system
+            destinationRef <! GetNumNodes(numNodes, userId)
 
         | Tweet(userId, tweetString) ->
             tweetsReceived <- tweetsReceived + 1
             if tweetsReceived > numTweets then
                 ALL_COMPUTATIONS_DONE <- 1
-            let mutable userName = sprintf "User%i" userId
-            let mutable allSubscribers = subscribers.[userName]
-            let userMentions = searchMentions tweetString
-            for mentioned in userMentions do
-                let mentionedId = matchSample mentioned userRegexMatch
-                allSubscribers <- allSubscribers |> Array.filter ((<>) mentionedId )
-                allSubscribers <- Array.concat [| allSubscribers ; [|mentionedId|] |]
+            if userId < numNodes then
+                let mutable userName = sprintf "User%i" userId
+                let mutable allSubscribers = subscribers.[userName]
+                allSubscribers <- allSubscribers |> Array.filter ((<>) -1 )
+                let userMentions = searchMentions tweetString
+                for mentioned in userMentions do
+                    printfn "M-%s" mentioned
+                    let mentionedId = matchSample userRegexMatch mentioned
+                    if mentionedId < numNodes then
+                        allSubscribers <- allSubscribers |> Array.filter ((<>) mentionedId )
+                        allSubscribers <- Array.concat [| allSubscribers ; [|mentionedId|] |]
 
-            let userHashtags = searchHashtags tweetString
-            for hashtags in userHashtags do
-                let mutable thisHashtagTweets = hashtagTweets.[hashtags]
-                thisHashtagTweets <- thisHashtagTweets |> Array.filter ((<>) tweetString )
-                thisHashtagTweets <- Array.concat [| thisHashtagTweets ; [|tweetString|] |]
-                hashtagTweets <- hashtagTweets.Add(hashtags, thisHashtagTweets)
+                let userHashtags = searchHashtags tweetString
+                for hashtags in userHashtags do
+                    if hashtagTweets.ContainsKey(hashtags) then
+                        let mutable thisHashtagTweets = hashtagTweets.[hashtags]
+                        thisHashtagTweets <- thisHashtagTweets |> Array.filter ((<>) tweetString )
+                        thisHashtagTweets <- Array.concat [| thisHashtagTweets ; [|tweetString|] |]
+                        hashtagTweets <- hashtagTweets.Add(hashtags, thisHashtagTweets)
+                    else
+                        hashtagTweets <- hashtagTweets.Add(hashtags, [|tweetString|]) 
 
-            for subs in allSubscribers do
-                let mutable userName = (sprintf "User%i" subs)
-                let mutable userFoundOffline = false
-                for offlineUsersCurrent in offlineUsers do
-                    if not userFoundOffline then
-                        if offlineUsersCurrent = subs then
-                            userFoundOffline <- true
-                if userFoundOffline then
-                    let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
-                    usertweetsToBeSent <- usertweetsToBeSent |> Array.filter ((<>) tweetString )
-                    usertweetsToBeSent <- Array.concat [| usertweetsToBeSent ; [|tweetString|] |]
-                    tweetsToBeSent <- tweetsToBeSent.Add(userName, usertweetsToBeSent)
-                else
-                    UserActorMapping.[userName] <! ReceiveTweet(tweetString)
+                for subs in allSubscribers do
+                    let mutable userName = (sprintf "User%i" subs)
+                    let mutable userFoundOffline = false
+                    for offlineUsersCurrent in offlineUsers do
+                        if not userFoundOffline then
+                            if offlineUsersCurrent = subs then
+                                userFoundOffline <- true
+                    if userFoundOffline then
+                        let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
+                        usertweetsToBeSent <- usertweetsToBeSent |> Array.filter ((<>) tweetString )
+                        usertweetsToBeSent <- usertweetsToBeSent |> Array.filter ((<>) "" )
+                        usertweetsToBeSent <- Array.concat [| usertweetsToBeSent ; [|tweetString|] |]
+                        tweetsToBeSent <- tweetsToBeSent.Add(userName, usertweetsToBeSent)
+                    else
+                        let destinationRef = select ("akka://system/user/User"+ (subs |> string)) system
+                        destinationRef <! ReceiveTweet(tweetString)
                     
         | Retweet(userName) ->
             // choose a random user and ask them for a random tweet
             let mutable randomUserId = random.Next(numNodes)
             let mutable randomUserName = sprintf "User%i" randomUserId
-            UserActorMapping.[randomUserName] <! SendRandomTweet(userName, "")
+            let destinationRef = select ("akka://system/user/User"+ (randomUserId |> string)) system
+            destinationRef <! SendRandomTweet(userName, "")
 
         | SendRandomTweet(userName, newUserTweet) ->
             if newUserTweet <> "" then
-                UserActorMapping.[userName] <! RetweetReceive(newUserTweet)
+                let mentionedId = matchSample userRegexMatch userName
+                let destinationRef = select ("akka://system/user/User"+ (mentionedId |> string)) system
+                destinationRef <! RetweetReceive(newUserTweet)
 
         | Subscribe(userId) ->
 
-            let mutable allUsers = [|0..numNodes|]
+            let mutable allUsers = [|0..numNodes-1|]
             let mutable userName = sprintf "User%i" userId
-            let mutable userSubscribers = subscribers.[userName]
-            if userSubscribers.Length < numNodes - 2 then
-                // remove already subscribed indexes and choose from among the remaining ones
-                for i in userSubscribers do
-                    allUsers <- allUsers |> Array.filter ((<>) i )
-                allUsers <- allUsers |> Array.filter ((<>) userId )
-                let mutable randomNewSub = random.Next(allUsers.Length)
-                userSubscribers <- Array.concat [| userSubscribers ; [|randomNewSub|] |] 
-                subscribers <- subscribers.Add(userName, userSubscribers)
+            if userId < numNodes then
+                let mutable userSubscribers = subscribers.[userName]
+                userSubscribers <- userSubscribers |> Array.filter ((<>) -1 )
+                if userSubscribers.Length < numNodes - 2 then
+                    // remove already subscribed indexes and choose from among the remaining ones
+                    for i in userSubscribers do
+                        allUsers <- allUsers |> Array.filter ((<>) i )
+                    allUsers <- allUsers |> Array.filter ((<>) userId )
+                    let mutable randomNewSub = random.Next(allUsers.Length)
+                    userSubscribers <- Array.concat [| userSubscribers ; [|randomNewSub|] |] 
+                    subscribers <- subscribers.Add(userName, userSubscribers)
+                    printfn "%d is subscribing to %d" userId randomNewSub
 
         | GoOffline(userId) ->
             offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
             offlineUsers <- Array.concat [| offlineUsers ; [|userId|] |] 
-            UserActorRef.[userId] <! GoOffline(userId)
+            let destinationRef = select ("akka://system/user/User"+ (userId |> string)) system
+            destinationRef <! GoOffline(userId)
 
         | GoOnline(userId) ->
             let mutable userName = sprintf "User%i" userId
-            let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
-            offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
-            for tweet in usertweetsToBeSent do
-                UserActorMapping.[userName] <! ReceiveTweet(tweet)
-            tweetsToBeSent <- tweetsToBeSent.Add(userName, [||])
+            if userId < numNodes then
+                let mutable usertweetsToBeSent = tweetsToBeSent.[userName]
+                usertweetsToBeSent <- usertweetsToBeSent |> Array.filter ((<>) "" )
+                offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
+                for tweet in usertweetsToBeSent do
+                    let destinationRef = select ("akka://system/user/User"+ (userId |> string)) system
+                    destinationRef <! ReceiveTweet(tweet)
+                tweetsToBeSent <- tweetsToBeSent.Add(userName, [|""|])
 
         | QueryHashtags(userId, hashtagQuery) ->
-            let mutable userName = sprintf "User%i" userId
-            let mutable tweetsFound = hashtagTweets.[hashtagQuery]
-            UserActorMapping.[userName] <! ReceiveQueryHashtags(tweetsFound)
+            if userId < numNodes then
+                let hashtagString = stripchars "#" hashtagQuery
+                if hashtagTweets.ContainsKey(hashtagString) then
+                    let mutable tweetsFound = hashtagTweets.[hashtagString]
+                    let destinationRef = select ("akka://system/user/User"+ (userId |> string)) system
+                    destinationRef <! ReceiveQueryHashtags(tweetsFound)
 
         | _-> 0|>ignore 
         return! loop()
@@ -337,8 +401,8 @@ let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
     let numNodes = numNodesVal 
     let numTweets = numTweetsVal
-    let selfStopwatch = System.Diagnostics.Stopwatch()
-    let mutable oldTime = 0.0
+    let selfStopwatchBoss = System.Diagnostics.Stopwatch()
+    let mutable oldTimeBoss = 0.0
 
     let rec loop() = actor {
 
@@ -350,29 +414,26 @@ let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
             // create Peers
             let engineActor = spawn system "engineActor" (MyengineActor numNodes numTweets)
 
-            engineActorRef <- Array.zeroCreate 1
-            engineActorRef.[0] <- engineActor
-            engineActorRef.[0] <! StartEngine
+            let destinationRef = select ("akka://system/user/engineActor") system
+            destinationRef <! StartEngine
 
-            UserActorRef <- Array.zeroCreate (numNodes)
             printfn "Done with engine"
 
             for i in 0..numNodes-1 do
                 let mutable workerName = sprintf "User%i" i
                 let mutable userActor = spawn system workerName (MyUserActor workerName i)
                 userActor <! Register
-                UserActorRef.[i] <- userActor
-                UserActorMapping <- UserActorMapping.Add(workerName, userActor)
 
-            selfStopwatch.Start()
-            oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
+            selfStopwatchBoss.Start()
+            oldTimeBoss <- float(selfStopwatchBoss.Elapsed.TotalSeconds)
 
-            while float(selfStopwatch.Elapsed.TotalSeconds) - oldTime < 5.0 do
+            while float(selfStopwatchBoss.Elapsed.TotalSeconds) - oldTimeBoss < 5.0 do
                 0|> ignore
 
             // Send signal to all users to start their processes
             for i in 0..numNodes-1 do
-                UserActorRef.[i] <! StartUser 
+                let destinationRef = select ("akka://system/user/User"+ (i |> string)) system
+                destinationRef <! StartUser 
 
             printfn "Done with users"
 
@@ -382,15 +443,16 @@ let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
         | SimulateBoss ->
 
             // choose random num/10 nodes and make them offline
-            for i in 0..numNodes/10 do
+            for i in 0..1 do
                 let mutable offlineNodeId = random.Next(numNodes)
                 printfn "Setting %i offline" offlineNodeId
-                engineActorRef.[0] <! GoOffline(offlineNodeId)
+                let destinationRef = select ("akka://system/user/engineActor") system
+                destinationRef <!  GoOffline(offlineNodeId)
                 
 
-            while float(selfStopwatch.Elapsed.TotalSeconds) - oldTime < 1.0 do
+            while float(selfStopwatchBoss.Elapsed.TotalSeconds) - oldTimeBoss < 1.0 do
                 0|> ignore
-            oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
+            oldTimeBoss <- float(selfStopwatchBoss.Elapsed.TotalSeconds)
             mailbox.Self <! SimulateBoss
                 
         | StopBoss ->
@@ -410,10 +472,8 @@ let main argv =
     let numTweets = ((Array.get argv 2) |> int)
 
     let bossActor = spawn system "bossActor" (MybossActor numNodes numTweets)
-
-    bossActorRef <- Array.zeroCreate 1
-    bossActorRef.[0] <- bossActor
-    bossActorRef.[0] <! StartBoss
+    let destinationRef = select ("akka://system/user/bossActor") system
+    destinationRef <! StartBoss
 
     printfn "Done with boss"
 
