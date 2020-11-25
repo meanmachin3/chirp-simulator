@@ -296,6 +296,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
         | Tweet(userId, tweetString) ->
             tweetsReceived <- tweetsReceived + 1
+            printfn "Tweets received = %d" tweetsReceived
             if tweetsReceived > numTweets then
                 ALL_COMPUTATIONS_DONE <- 1
             if userId < numNodes then
@@ -304,7 +305,6 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 allSubscribers <- allSubscribers |> Array.filter ((<>) -1 )
                 let userMentions = searchMentions tweetString
                 for mentioned in userMentions do
-                    printfn "M-%s" mentioned
                     let mentionedId = matchSample userRegexMatch mentioned
                     if mentionedId < numNodes then
                         allSubscribers <- allSubscribers |> Array.filter ((<>) mentionedId )
