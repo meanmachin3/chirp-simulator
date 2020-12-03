@@ -45,3 +45,4 @@ namespace MessageTypes
         | GoOffline of int
         | GoOnline of int
         | GetNumNodes of int*int
+        | Ping of string

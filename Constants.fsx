@@ -11,10 +11,11 @@ module Constants =
     let tweets = [|"Doing DOS rn, talk later!"; "Coding takes time!"; "Watching Pokemon!"; "Playing Pokemon Go!" ; "UF is awesome!"; "Guess what?"|]
     let userRegexMatch = "User([0-9]*)"
     let random = System.Random()
-    let config =
-        Configuration.parse
-            @"akka {
-                    log-dead-letters = off
-                }
-            }"
-    let system = System.create "system" (config)
+    let mutable totalTweetsToBeSent = 0
+    // let config =
+    //     Configuration.parse
+    //         @"akka {
+    //                 log-dead-letters = off
+    //             }
+    //         }"
+    // let system = System.create "system" (config)
