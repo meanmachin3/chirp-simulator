@@ -10,6 +10,10 @@ module Constants =
     let Information = 2
     let Debug = 3
 
+    /// Mentions and Hashtags
+    let Mention = '@'
+    let Hashtag = '#'
+    
 
     let mutable ALL_COMPUTATIONS_DONE = 0
     let actions = [|"tweet"; "subscribe"; "retweet"; "query"|]

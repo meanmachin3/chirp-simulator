@@ -25,8 +25,8 @@ let config =
             }
         }"
         
-let mutable allTweetsSent = 0
- 
+let mutable TweetsExchanged = 0
+let threshold = 10.0
 let system = System.create "Twitter" config
 
 let sendMessageToEngine data = 
@@ -41,22 +41,22 @@ let sendMessageToUser data id =
 
 let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) = 
 
-    let selfName = actorNameVal
-    let selfId = actorId
-    let mutable selfTweets =  Array.create 0 ""
-    let mutable receivedTweets = Array.empty
-    let selfStopwatch = System.Diagnostics.Stopwatch()
-    let mutable oldTime = 0.0
-    let mutable alive = true
+    let name = actorNameVal
+    let id = actorId
+    let mutable liveTweets =  Array.create 0 ""
+    let mutable offlineTweets = Array.empty
+    let timer = Diagnostics.Stopwatch()
+    let mutable previousTimer = 0.0
+    let mutable isOnline = true
 
     let rec loop() = actor {
 
-        if float(selfStopwatch.Elapsed.TotalSeconds) - oldTime > 0.5 && not alive then
-            oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
-            alive <- true
-            let data = {Author = selfId |> string; Message = ""; Operation = "GoOnline"}
+        if float(timer.Elapsed.TotalSeconds) - previousTimer > 0.5 && not isOnline then
+            previousTimer <- float(timer.Elapsed.TotalSeconds)
+            isOnline <- true
+            let data = {Author = id |> string; Message = ""; Operation = "GoOnline"}
             sendMessageToEngine(data)
-            log Debug "Setting %d online" selfId
+            log Debug "Setting %d online" id
 
 
         let! json = mailbox.Receive()
@@ -71,47 +71,47 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
         match operation with
 
         | "Register" ->
-            log Debug "Registered: %s" selfName
-            selfStopwatch.Start()
+            log Debug "Registered: %s" name
+            timer.Start()
 
         | "StartUser" ->
             log Debug "Starting All Users"
-            if alive then
+            if isOnline then
                 let mutable actionId = random.Next(actions.Length)
                 let activity = actions.[actionId]
                 log Debug "Action selected =======> %s" actions.[actionId]
                 match activity with
                 | "tweet" -> 
                     let data = {Author = "" |> string; Message = ""; Operation = "TweetInit"}
-                    sendMessageToUser data selfId
+                    sendMessageToUser data id
                 | "retweet" ->
                     let data = {Author = "" |> string; Message = ""; Operation = "RetweetInit"}
-                    sendMessageToUser data selfId
+                    sendMessageToUser data id
                 | "subscribe" ->
                     let data = {Author = "" |> string; Message = ""; Operation = "SubscribeInit"}
-                    sendMessageToUser data selfId
+                    sendMessageToUser data id
                 | "query" ->
                     let data = {Author = "" |> string; Message = ""; Operation = "QueryInit"}
-                    sendMessageToUser data selfId
+                    sendMessageToUser data id
                 | _ ->
                     log Debug "Invalid Activity"
-            let mutable timeNow = float(selfStopwatch.Elapsed.TotalMilliseconds)
-            while float(selfStopwatch.Elapsed.TotalMilliseconds) - timeNow < 10.0 do
-                0|> ignore
+            let mutable timeNow = float(timer.Elapsed.TotalMilliseconds)
+            while float(timer.Elapsed.TotalMilliseconds) - timeNow < threshold do
+                0 |> ignore
             let data = {Author = "" |> string; Message = ""; Operation = "StartUser"}
-            sendMessageToUser data selfId
+            sendMessageToUser data id
 
 
         | "GoOffline"  ->
-            if alive then
-                alive <- false
-                oldTime <- float(selfStopwatch.Elapsed.TotalSeconds)
+            if isOnline then
+                isOnline <- false
+                previousTimer <- float(timer.Elapsed.TotalSeconds)
 
         | "TweetInit" ->
             log Debug "<======== TweetInit =========>"
             let mutable mentionUserBoolean = random.Next(2)
             if mentionUserBoolean = 1 then
-                let data = {Author = selfId |> string; Message = ""; Operation = "GetNumNodes"}
+                let data = {Author = id |> string; Message = ""; Operation = "GetNumNodes"}
                 sendMessageToEngine data
             else
                 let mutable randomMessageId = random.Next(tweets.Length)
@@ -119,13 +119,13 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
                 if randomMessageId < tweets.Length then
                     let mutable tweetString = tweets.[randomMessageId]
                     if randomHashtagId < hashtags.Length then
-                        tweetString <- tweetString + hashtags.[randomHashtagId]
-                    selfTweets <- Array.concat [| selfTweets ; [|tweetString|] |]
-                    log Debug "New Tweet from %s is %s" selfName tweetString
-                    let data = {Author = selfId |> string; Message = tweetString; Operation = "Tweet"}
+                        tweetString <- tweetString + " " + hashtags.[randomHashtagId]
+                    liveTweets <- Array.concat [| liveTweets ; [|tweetString|] |]
+                    log Debug "New Tweet from %s is %s" name tweetString
+                    let data = {Author = id |> string; Message = tweetString; Operation = "Tweet"}
                     sendMessageToEngine data
-                    allTweetsSent <- allTweetsSent + 1
-                    if allTweetsSent >= totalTweetsToBeSent then
+                    TweetsExchanged <- TweetsExchanged + 1
+                    if TweetsExchanged >= totalTweetsToBeSent then
                         ALL_COMPUTATIONS_DONE <- 1
 
         | "GetNumNodes" ->
@@ -136,35 +136,35 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             if randomMessageId < tweets.Length then
                 let mutable tweetString = tweets.[randomMessageId]
                 if randomHashtagId < hashtags.Length then
-                    tweetString <- tweetString + hashtags.[randomHashtagId]
+                    tweetString <- tweetString + " " + hashtags.[randomHashtagId]
                 let randomUserNameId = random.Next(totalNodes)
                 if randomUserNameId < totalNodes then
                     let mutable randomUserName = sprintf "@User%i" randomUserNameId
-                    tweetString <- tweetString + randomUserName
-                selfTweets <- Array.concat [| selfTweets ; [|tweetString|] |]
-                log Debug "New Tweet from %s is %s" selfName tweetString
-                let data = {Author = selfId |> string; Message = tweetString; Operation = "Tweet"}
+                    tweetString <- tweetString + " " + randomUserName
+                liveTweets <- Array.concat [| liveTweets ; [|tweetString|] |]
+                log Debug "New Tweet from %s is %s" name tweetString
+                let data = {Author = id |> string; Message = tweetString; Operation = "Tweet"}
                 sendMessageToEngine data
 
         | "ReceiveTweet" ->
             let newTweet = message.Message
             log Debug "Received Tweet %A" newTweet
-            receivedTweets <- Array.concat [| receivedTweets ; [|newTweet|] |]
+            offlineTweets <- Array.concat [| offlineTweets ; [|newTweet|] |]
 
         | "RetweetInit" ->
             log Debug "<======== RetweetInit =========>"
-            let data = {Author = selfId |> string; Message = ""; Operation = "Retweet"}
+            let data = {Author = id |> string; Message = ""; Operation = "Retweet"}
             sendMessageToEngine data
 
         | "RetweetReceive" ->
             let newTweet = message.Message
-            log Debug "Retweet Tweet from %s is %s" selfName newTweet
-            let data = {Author = selfId |> string; Message = newTweet; Operation = "Tweet"}
+            log Debug "Retweet Tweet from %s is %s" name newTweet
+            let data = {Author = id |> string; Message = newTweet; Operation = "Tweet"}
             sendMessageToEngine data
 
         | "SubscribeInit" ->
             log Debug "<======= SubscribeInit =======>"
-            let data = {Author = selfId |> string; Message = ""; Operation = "Subscribe"}
+            let data = {Author = id |> string; Message = ""; Operation = "Subscribe"}
             sendMessageToEngine data
 
         | "QueryInit" ->
@@ -172,15 +172,15 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             let mutable randomQueryId = random.Next(queries.Length)
             if randomQueryId < queries.Length then
                 if queries.[randomQueryId] = "QuerySubscribedTweets" then
-                    let data = {Author = selfId |> string; Message = ""; Operation = "QuerySubscribedTweets"}
+                    let data = {Author = id |> string; Message = ""; Operation = "QuerySubscribedTweets"}
                     let json = Json.serialize data
                     mailbox.Self <! json
                 elif queries.[randomQueryId] = "QueryHashtags" then
-                    let data = {Author = selfId |> string; Message = ""; Operation = "QueryHashtags"}
+                    let data = {Author = id |> string; Message = ""; Operation = "QueryHashtags"}
                     let json = Json.serialize data
                     mailbox.Self <! json
                 elif queries.[randomQueryId] = "QueryMentions" then
-                    let data = {Author = selfId |> string; Message = ""; Operation = "QueryMentions"}
+                    let data = {Author = id |> string; Message = ""; Operation = "QueryMentions"}
                     let json = Json.serialize data
                     mailbox.Self <! json
                 
@@ -190,7 +190,7 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             let mutable randomSearchId = random.Next(search.Length)
             if randomSearchId < search.Length then
                 let mutable randomsearchString = search.[randomSearchId]
-                let data = {Author = selfId |> string; Message = randomsearchString; Operation = "QuerySubscribedTweets"}
+                let data = {Author = id |> string; Message = randomsearchString; Operation = "QuerySubscribedTweets"}
                 sendMessageToEngine data
 
         | "ReceiveQuerySubscribedTweets" ->
@@ -204,7 +204,7 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
             log Debug "<======= QueryHashtags =======>"
             let mutable randomHashtagId = random.Next(hashtags.Length)
             if randomHashtagId < hashtags.Length then
-                let data = {Author = selfId |> string; Message = hashtags.[randomHashtagId]; Operation = "QueryHashtags"}
+                let data = {Author = id |> string; Message = hashtags.[randomHashtagId]; Operation = "QueryHashtags"}
                 sendMessageToEngine data
 
         | "ReceiveQueryHashtags" ->
@@ -216,7 +216,7 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
 
         | "QueryMentions" ->
             log Debug "<======= QueryMentions =======>"
-            let data = {Author = selfId |> string; Message = ""; Operation = "QueryMentions"}
+            let data = {Author = id |> string; Message = ""; Operation = "QueryMentions"}
             sendMessageToEngine data
 
         | "ReceiveQueryMentions" ->
@@ -233,54 +233,53 @@ let UserActor (actorNameVal:string) (actorId:int) (mailbox : Actor<_>) =
     loop ()
 
 
-let MybossActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) = 
+let Supervisor (nodes:int) (tweets:int) (mailbox : Actor<_>) = 
 
-    let numNodes = numNodesVal 
-    let numTweets = numTweetsVal
-    let selfStopwatchBoss = System.Diagnostics.Stopwatch()
-    let mutable oldTimeBoss = 0.0
+    let totalNodes = nodes 
+    let totalTweets = tweets
+    let now = Diagnostics.Stopwatch()
+    let mutable prev = 0.0
     
     let rec loop() = actor {
         let! message = mailbox.Receive()
-        log Debug "<======= MybossActor =======>"
+        log Debug "<======= Supervisor =======>"
         match message with
-        | StartBoss ->
-            log Debug "<======= StartBoss =======>"
-            for i in 0..numNodes-1 do
-                let mutable workerName = sprintf "User%i" i
-                let mutable userActor = spawn system workerName (UserActor workerName i)
-                let data = {Author = ""; Message = workerName; Operation = "Register"}
-                sendMessageToUser data i
+        | "Start" ->
+            log Debug "<======= Start Supervisor =======>"
+            [0..totalNodes-1] |> List.iter (fun i ->
+                    let mutable name = sprintf "User%i" i
+                    let mutable actor = spawn system name (UserActor name i)
+                    let data = {Author = ""; Message = name; Operation = "Register"}
+                    sendMessageToUser data i
+                )
+                
+            now.Start()
+            prev <- float(now.Elapsed.TotalSeconds)
 
-            selfStopwatchBoss.Start()
-            oldTimeBoss <- float(selfStopwatchBoss.Elapsed.TotalSeconds)
+            while float(now.Elapsed.TotalSeconds) - prev < 5.0 do
+              "" |> ignore
 
-            while float(selfStopwatchBoss.Elapsed.TotalSeconds) - oldTimeBoss < 5.0 do
-                0|> ignore
-
-            for i in 0..numNodes-1 do
+            [0..totalNodes-1] |> List.iter (fun i ->
                 let data = {Author = "" |> string; Message = ""; Operation = "StartUser"}
                 sendMessageToUser data i
-
+            )
             log Debug "Done with users"
 
-            mailbox.Self <! SimulateBoss
+            mailbox.Self <! "Run"
             
 
-        | SimulateBoss ->
-            for i in 0..1 do
-                let mutable offlineNodeId = random.Next(numNodes)
+        | "Run" ->
+            [0..1] |> List.iter (fun i ->
+                let mutable offlineNodeId = random.Next(totalNodes)
                 log Debug "Setting %i offline" offlineNodeId
                 let data = {Author = offlineNodeId |> string; Message = ""; Operation = "GoOffline"}
                 sendMessageToEngine data
+            )
 
-            while float(selfStopwatchBoss.Elapsed.TotalSeconds) - oldTimeBoss < 1.0 do
+            while float(now.Elapsed.TotalSeconds) - prev < 1.0 do
                 0|> ignore
-            oldTimeBoss <- float(selfStopwatchBoss.Elapsed.TotalSeconds)
-            mailbox.Self <! SimulateBoss
-                
-        | StopBoss ->
-            ALL_COMPUTATIONS_DONE <- 1
+            prev <- float(now.Elapsed.TotalSeconds)
+            mailbox.Self <! "Run"
 
         | _ -> log Debug "Invalid Command"
 
@@ -294,9 +293,9 @@ let main argv =
     let numNodes = 10
     let numTweets = 1000
     totalTweetsToBeSent <- numTweets
-    let bossActor = spawn system "bossActor" (MybossActor numNodes numTweets)
+    let bossActor = spawn system "bossActor" (Supervisor numNodes numTweets)
     let destinationRef = select ("akka.tcp://Twitter@127.0.0.1:9001/user/bossActor") system
-    destinationRef <! StartBoss
+    destinationRef <! "Start"
 
     log Debug "Done with boss"
 
