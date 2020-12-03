@@ -5,6 +5,7 @@
 
 #load @"./Constants.fsx"
 #load @"./MessageTypes.fsx"
+#load @"./Logger.fsx"
 
 open Constants.Constants
 open System.Text.RegularExpressions
@@ -14,6 +15,7 @@ open Akka.Actor
 open Akka.Configuration
 open MessageTypes
 open FSharp.Json
+open Logger.Logging
 
 let config =
     Configuration.parse
@@ -26,7 +28,18 @@ let config =
         }"
 let system = System.create "Twitter" config
 
-let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) = 
+
+let sendMessageToEngine data = 
+    let destinationRef = select ("akka.tcp://Twitter@127.0.0.1:9002/user/engineActor") system
+    let json = Json.serialize data
+    destinationRef <! json
+
+let sendMessageToUser data id = 
+    let destinationRef = select ("akka.tcp://Twitter@127.0.0.1:9001/user/User"+ (id |> string)) system
+    let json = Json.serialize data
+    destinationRef <! json
+
+let TwitterEngine (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) = 
 
     let numNodes = numNodesVal 
     let numTweets = numTweetsVal
@@ -106,10 +119,10 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
 
     
     let rec loop() = actor {
-        printfn "Actor called"
+        log Debug "Actor called"
         let! json = mailbox.Receive()
         let message = Json.deserialize<TweetApiMessage> json
-        printfn "Actor called with %A" message
+        log Debug "Actor called with %A" message
 
         let sender = mailbox.Sender()
         
@@ -118,11 +131,10 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
         match operation with
 
         | "StartEngine" ->
-            printfn "StartEngine"
+            log Debug "StartEngine"
             for i in 0..numNodes-1 do
                 let mutable workerName = sprintf "User%i" i
                 subscribers <- subscribers.Add(workerName, [|-1|])
-                // tweetsToBeSent <- tweetsToBeSent.Add(workerName, [|""|])
                 tweetsToBeSent <- tweetsToBeSent.Add(workerName, [|{Author = ""; Message = ""}|])
                 allTweets <- allTweets.Add(workerName, [|""|])
                 myMentions <- myMentions.Add(workerName, [|""|])
@@ -131,7 +143,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
             selfStopwatchEngine.Start()
 
         | "GetNumNodes" ->
-            printfn "GetNumNodes"
+            log Debug "GetNumNodes"
             let userId = message.Author |> int
             let destinationRef = select ("akka.tcp://Twitter@127.0.0.1:9001/user/User"+ (userId |> string)) system
             let data = {Author = userId |> string; Message = numNodes |> string; Operation = "GetNumNodes"}
@@ -141,11 +153,11 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
             // destinationRef <! GetNumNodes(numNodes, userId)
 
         | "Tweet" ->
-            printfn "Tweet"
+            log Debug "Tweet"
             let userId = message.Author |> int
             let tweetString = message.Message
             tweetsReceived <- tweetsReceived + 1
-            printfn "Tweets received = %d" tweetsReceived
+            log Debug "Tweets received = %d" tweetsReceived
             if tweetsReceived > numTweets then
                ALL_COMPUTATIONS_DONE <- 1
             if userId < numNodes then
@@ -213,7 +225,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                     
         | "Retweet" ->
             // choose a random user and ask them for a random tweet
-            printfn "Retweet"
+            log Debug "Retweet"
             let userId = message.Author |> int
             let mutable randomUserId = random.Next(numNodes)
             let mutable randomUserName = sprintf "User%i" randomUserId
@@ -228,7 +240,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 // destinationRef <! RetweetReceive()
 
         | "Subscribe" ->
-            printfn "Subscribe"
+            log Debug "Subscribe"
             let userId = message.Author |> int
             let mutable allUsers = [|0..numNodes-1|]
             let mutable userName = sprintf "User%i" userId
@@ -243,10 +255,10 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                     let mutable randomNewSub = random.Next(allUsers.Length)
                     userSubscribers <- Array.concat [| userSubscribers ; [|randomNewSub|] |] 
                     subscribers <- subscribers.Add(userName, userSubscribers)
-                    printfn "%d is subscribing to %d" userId randomNewSub
+                    log Debug "%d is subscribing to %d" userId randomNewSub
 
         | "GoOffline" ->
-            printfn "GoOffline"
+            log Debug "GoOffline"
             let userId = message.Author |> int
             offlineUsers <- offlineUsers |> Array.filter ((<>) userId )
             offlineUsers <- Array.concat [| offlineUsers ; [|userId|] |] 
@@ -258,7 +270,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
             destinationRef <! json
 
         | "GoOnline" ->
-            printfn "GoOnline"
+            log Debug "GoOnline"
             let userId = message.Author |> int
             let mutable userName = sprintf "User%i" userId
             if userId < numNodes then
@@ -275,7 +287,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 tweetsToBeSent <- tweetsToBeSent.Add(userName, [|{Author = ""; Message = ""}|])
 
         | "QuerySubscribedTweets" ->
-            printfn "QuerySubscribedTweets"
+            log Debug "QuerySubscribedTweets"
             let userId = message.Author |> int
             let searchString = message.Message
             let mutable userName = sprintf "User%i" userId
@@ -299,7 +311,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 // destinationRef <! ReceiveQuerySubscribedTweets(searchString, [| "No tweets found" |])
 
         | "QueryHashtags" ->
-            printfn "QueryHashtags"
+            log Debug "QueryHashtags"
             let userId = message.Author |> int  
             let hashtagQuery = message.Message
             if userId < numNodes then
@@ -321,7 +333,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                     // destinationRef <! ReceiveQueryHashtags(hashtagQuery, [| "No tweets found" |])
 
         | "QueryMentions" ->
-            printfn "QueryMentions"
+            log Debug "QueryMentions"
             let userId = message.Author |> int  
             let mutable userName = sprintf "User%i" userId
             let mutable userMentions = myMentions.[userName]
@@ -342,7 +354,7 @@ let MyengineActor (numNodesVal:int) (numTweetsVal:int) (mailbox : Actor<_>) =
                 // destinationRef <! ReceiveQueryMentions([| "No tweets found" |])
             
         | _ -> 
-            printfn "Invalid Request"
+            log Debug "Invalid Request"
             sender <! "Invalid Request"
 
         return! loop()
@@ -353,13 +365,13 @@ let main argv =
     let numNodes = 10
     let numTweets = 1000
 
-    let engineActor = spawn system "engineActor" (MyengineActor numNodes numTweets)
+    let engineActor = spawn system "engineActor" (TwitterEngine numNodes numTweets)
     let destinationRef = select ("akka.tcp://Twitter@127.0.0.1:9002/user/engineActor") system
     let data = {Author = ""; Message = ""; Operation = "StartEngine"}
     let json = Json.serialize data
     destinationRef <! json
 
-    printfn "Done with engineActor"
+    log Debug "Done with engineActor"
 
     while(ALL_COMPUTATIONS_DONE = 0) do
         0|>ignore
