@@ -6,19 +6,19 @@
 - [Build Process](#build-process)
 - [What is Working](#what-is-working)
 - [Implementation](#implementation)
-- [Simulation](#simulation)
+- [Zipf](#zipf)
 - [Performance](#performance)
 
 ## Build Process
 
 - Download the repository `git clone https://github.com/meanmachin3/gossip-protocol.git`
-- `dotnet fsi --langversion:preview RemoteActor.fsx numNodes numTweets` to run Twitter Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the amount of tweets that needs to simulated.
-- `dotnet fsi --langversion:preview Main.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the amount of tweets that needs to simulated.
+- `dotnet fsi --langversion:preview TwitterEngine.fsx numNodes numTweets` to run Twitter Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
+- `dotnet fsi --langversion:preview Main.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 
 ## What is Working
 
 - Register account
-- Send tweet. Tweets can have hashtags (e.g. #COP5615isgreat) and mentions (@bestuser)
+- Send a tweet. Tweets can have hashtags (e.g. #COP5615isgreat) and mentions (@bestuser)
 - Subscribe to user's tweets
 - Re-tweets (so that your subscribers get an interesting tweet you got by other means)
 - Allow querying tweets subscribed to, tweets with specific hashtags, tweets in which the user is mentioned (my mentions)
@@ -26,10 +26,21 @@
 
 ## Implementation
 
-Twitter Engine and User Engine accepts command line parameters as `numNodes` that denotes the amount of user that needs to be simulated along with `numTweets` that tells how many tweets needs to exchanged. There's no need of iteraction with the user engine actor as it simulates real life scenario of tweet, retweeting, subscribing and searching for tweets.
+Twitter Engine and User Engine accepts command line parameters as `numNodes` that denotes the amount of user that needs to be simulated along with `numTweets` that tells how many tweets need to be exchanged. There's no need for interaction with the user engine actor as it simulates the real-life scenario of tweeting, retweeting, subscribing, and searching for tweets.
 
-Once the Twitter Engine is started, it waits for incoming connection request. 
+A user needs to be a registered member in order to start tweeting. Whenever a tweet is made by an actor, it is sent to TwitterEngine. TwitterEngine forwards that tweet to the followers of the tweeted person. Every actor is made to simulate like a real person. At any given point in time, each actor can tweet, retweet, subscribe, or search for a tweet with hashtags or mentions.
 
-## Simulation
+The Boss actor is responsible for setting users at random, offline, or online. Whenever the user goes offline, all the tweets/retweets it receives are saved temporarily in offline meets and whenever it is online all the messages are delivered to the user. An Offline user cannot search or perform a subscription to another subscriber.
 
+## Zipf
+
+We perform the simulation using the Zipf distribution amongst subscribers, we tried to measure the activity(tweets/retweets) of those users. We found that the more number of subscribers a user has, the more activity it generates in the system.
+
+The interesting find is that the tweet activity despite being totally random among these users also followed a Zipf distribution (Sort of)
+
+![Zipf Distribution](./docs/zipf.png)
 ## Performance
+
+We ran the simulation for a different number of users and the following are the results. It is clear that adding a more actor increase the performance of system i.e (there are more tweets processed per time) implying that the system is capable of handling a larger number of tweets.
+
+![Number of Tweets vs Time](./docs/number_tweets_time.png)
