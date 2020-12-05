@@ -18,7 +18,7 @@
 
 ## Build Process
 
-- Unzip file `unzip VasuYadav.zip`
+- Unzip file `unzip NegiYadav.zip`
 - `dotnet fsi --langversion:preview TwitterEngine.fsx numNodes numTweets` to run Twitter Engine script where `numNodes` is the number of users you want to run twitter engine. `numTweets` is the number of tweets that needs to simulate. The same values must be passed to client.
 - And then run `dotnet fsi --langversion:preview Main.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 - `dotnet fsi --langversion:preview ZipfTwitterEngine.fsx numNodes numTweets` to run Twitter Engine script with zipf distribution where `numNodes` is the number of users you want to run twitter engine. `numTweets` is the number of tweets that needs to simulate. The same values must be passed to client.
