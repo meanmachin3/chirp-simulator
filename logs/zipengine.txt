@@ -1,0 +1,4327 @@
+[INFO][12/5/2020 12:38:05 AM][Thread 0001][remoting (akka://Twitter)] Starting remoting
+[INFO][12/5/2020 12:38:05 AM][Thread 0001][remoting (akka://Twitter)] Remoting started; listening on addresses : [akka.tcp://Twitter@127.0.0.1:9002]
+[INFO][12/5/2020 12:38:05 AM][Thread 0001][remoting (akka://Twitter)] Remoting now listens on addresses: [akka.tcp://Twitter@127.0.0.1:9002]
+User 0 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20; 21;
+  22; 23; 24; 25|]
+User 1 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16|]
+User 2 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12|]
+User 3 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10|]
+User 4 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7; 8|]
+User 5 subscribed to [|0; 1; 2; 3; 4; 5; 6; 7|]
+User 6 subscribed to [|0; 1; 2; 3; 4; 5; 6|]
+User 7 subscribed to [|0; 1; 2; 3; 4; 5|]
+User 8 subscribed to [|0; 1; 2; 3; 4; 5|]
+User 9 subscribed to [|0; 1; 2; 3; 4|]
+User 10 subscribed to [|0; 1; 2; 3; 4|]
+User 11 subscribed to [|0; 1; 2; 3|]
+User 12 subscribed to [|0; 1; 2; 3|]
+User 13 subscribed to [|0; 1; 2; 3|]
+User 14 subscribed to [|0; 1; 2; 3|]
+User 15 subscribed to [|0; 1; 2|]
+User 16 subscribed to [|0; 1; 2|]
+User 17 subscribed to [|0; 1; 2|]
+User 18 subscribed to [|0; 1; 2|]
+User 19 subscribed to [|0; 1; 2|]
+User 20 subscribed to [|0; 1; 2|]
+User 21 subscribed to [|0; 1; 2|]
+User 22 subscribed to [|0; 1; 2|]
+User 23 subscribed to [|0; 1; 2|]
+User 24 subscribed to [|0; 1|]
+User 25 subscribed to [|0; 1|]
+User 26 subscribed to [|0; 1|]
+User 27 subscribed to [|0; 1|]
+User 28 subscribed to [|0; 1|]
+User 29 subscribed to [|0; 1|]
+User 30 subscribed to [|0; 1|]
+User 31 subscribed to [|0; 1|]
+User 32 subscribed to [|0; 1|]
+User 33 subscribed to [|0; 1|]
+User 34 subscribed to [|0; 1|]
+User 35 subscribed to [|0; 1|]
+User 36 subscribed to [|0; 1|]
+User 37 subscribed to [|0; 1|]
+User 38 subscribed to [|0; 1|]
+User 39 subscribed to [|0; 1|]
+User 40 subscribed to [|0; 1|]
+User 41 subscribed to [|0; 1|]
+User 42 subscribed to [|0; 1|]
+User 43 subscribed to [|0; 1|]
+User 44 subscribed to [|0; 1|]
+User 45 subscribed to [|0; 1|]
+User 46 subscribed to [|0; 1|]
+User 47 subscribed to [|0; 1|]
+User 48 subscribed to [|0; 1|]
+User 49 subscribed to [|0|]
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 1
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 2
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 3
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 4
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 5
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 6
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 7
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 8
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 9
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 10
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 11
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 12
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 13
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 14
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 15
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 16
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 17
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 18
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 19
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 20
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 21
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 22
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 23
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 24
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 25
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 26
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 27
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 28
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 29
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 30
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 31
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 32
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 33
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 34
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 35
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 36
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 37
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 38
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 39
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 40
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 41
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 42
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 43
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 44
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 45
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 46
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 47
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 48
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 49
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 50
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 51
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 52
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 53
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 54
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 55
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 56
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 57
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 58
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 59
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 60
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 61
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 62
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 63
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 64
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 65
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 66
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 67
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 68
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 69
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 70
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 71
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 72
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 73
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 74
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 75
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 76
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 77
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 78
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 79
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 80
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 81
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 82
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 83
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 84
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 85
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 86
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 87
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 88
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 89
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 90
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 91
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 92
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 93
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 94
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 95
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 96
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 97
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 98
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 99
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 100
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 101
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 102
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 103
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 104
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 105
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 106
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 107
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 108
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 109
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 110
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 111
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 112
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 113
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 114
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 115
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 116
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 117
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 118
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 119
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 120
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 121
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 122
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 123
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 124
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 125
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 126
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 127
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 128
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 129
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 130
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 131
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 132
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 133
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 134
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 135
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 136
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 137
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 138
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 139
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 140
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 141
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 142
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 143
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 144
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 145
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 146
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 147
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 148
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 149
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 150
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 151
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 152
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 153
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 154
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 155
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 156
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 157
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 158
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 159
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 160
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 161
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 162
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 163
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 164
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 165
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 166
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 167
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 168
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 169
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 170
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 171
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 172
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 173
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 174
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 175
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 176
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 177
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 178
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 179
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 180
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 181
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 182
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 183
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 184
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 185
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 186
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 187
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 188
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 189
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 190
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 191
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 192
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 193
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 194
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 195
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 196
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 197
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 198
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 199
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 200
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 201
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 202
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 203
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 204
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 205
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 206
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 207
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 208
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 209
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 210
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 211
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 212
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 213
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 214
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 215
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 216
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 217
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 218
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 219
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 220
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 221
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 222
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 223
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 224
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 225
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 226
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 227
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 228
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 229
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 230
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 231
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 232
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 233
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 234
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 235
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 236
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 237
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 238
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 239
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 240
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 241
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 242
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 243
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 244
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 245
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 246
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 247
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 248
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 249
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 250
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] GoOffline
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 251
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 252
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 253
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 254
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 255
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 256
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 257
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 258
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 259
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 260
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 261
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 262
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 263
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 264
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 265
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 266
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 267
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 268
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 269
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 270
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 271
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 272
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 273
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 274
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 275
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 276
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 277
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 278
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 279
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 280
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 281
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 282
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 283
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 284
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 285
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 286
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 287
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 288
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 289
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 290
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 291
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 292
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 293
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 294
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 295
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 296
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 297
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 298
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 299
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 300
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 301
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 302
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 303
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 304
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 305
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 306
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 307
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 308
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 309
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 310
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 311
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 312
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 313
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 314
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 315
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 316
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 317
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 318
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 319
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 320
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 321
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 322
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 323
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 324
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 325
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 326
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 327
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 328
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 329
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 330
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 331
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 332
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 333
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 334
+[Debug][12/4/2020 7:38:32 PM] QueryHashtags
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] Tweet
+[Debug][12/4/2020 7:38:32 PM] Tweets received = 335
+[Debug][12/4/2020 7:38:32 PM] Retweet
+[Debug][12/4/2020 7:38:32 PM] QueryMentions
+[Debug][12/4/2020 7:38:32 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 336
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 337
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 338
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 339
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 340
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 341
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 342
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 343
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 344
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 345
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 346
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 347
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 348
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 349
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 350
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 351
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 352
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 353
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 354
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 355
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 356
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 357
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 358
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 359
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 360
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 361
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 362
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 363
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 364
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 365
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 366
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 367
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 368
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 369
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 370
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 371
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 372
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 373
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 374
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 375
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 376
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 377
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 378
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 379
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 380
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 381
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 382
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 383
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 384
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 385
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 386
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 387
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 388
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 389
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 390
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 391
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 392
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 393
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 394
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 395
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 396
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 397
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 398
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 399
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 400
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 401
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 402
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 403
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 404
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 405
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 406
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 407
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 408
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 409
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 410
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 411
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 412
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 413
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 414
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 415
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 416
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 417
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 418
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 419
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 420
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 421
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 422
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 423
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 424
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 425
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 426
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 427
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 428
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 429
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 430
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 431
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 432
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 433
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 434
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 435
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 436
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 437
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 438
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 439
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 440
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 441
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 442
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 443
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 444
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 445
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 446
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 447
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 448
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 449
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 450
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 451
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 452
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 453
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 454
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 455
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 456
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 457
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 458
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 459
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 460
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 461
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 462
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 463
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 464
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 465
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 466
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 467
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 468
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 469
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 470
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 471
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 472
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 473
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 474
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 475
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 476
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 477
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 478
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 479
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 480
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 481
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 482
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 483
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 484
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 485
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 486
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 487
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 488
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 489
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 490
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 491
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 492
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 493
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 494
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 495
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 496
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 497
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 498
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 499
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 500
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 501
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 502
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 503
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 504
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 505
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 506
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 507
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 508
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 509
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 510
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 511
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 512
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 513
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 514
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 515
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 516
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 517
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 518
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 519
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 520
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 521
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 522
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 523
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 524
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 525
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 526
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 527
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 528
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 529
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 530
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 531
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 532
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 533
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 534
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 535
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 536
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 537
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 538
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 539
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 540
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 541
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 542
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 543
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 544
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 545
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 546
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 547
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 548
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 549
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 550
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 551
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 552
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 553
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 554
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 555
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 556
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 557
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 558
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 559
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 560
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 561
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 562
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 563
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 564
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 565
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 566
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 567
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 568
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 569
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 570
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 571
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 572
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 573
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 574
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 575
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 576
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 577
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 578
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 579
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 580
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 581
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 582
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 583
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 584
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 585
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 586
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 587
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 588
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 589
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 590
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 591
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 592
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 593
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 594
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 595
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 596
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 597
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 598
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 599
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 600
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 601
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 602
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 603
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 604
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 605
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 606
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 607
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 608
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 609
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 610
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 611
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 612
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 613
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 614
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 615
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 616
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 617
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 618
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 619
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 620
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 621
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 622
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 623
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 624
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 625
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 626
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 627
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 628
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 629
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 630
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 631
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 632
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 633
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 634
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 635
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 636
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 637
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 638
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 639
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 640
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 641
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 642
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 643
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 644
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 645
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 646
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 647
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 648
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 649
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 650
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 651
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 652
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 653
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 654
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 655
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 656
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 657
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 658
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 659
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 660
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 661
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 662
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 663
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 664
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 665
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 666
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 667
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 668
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 669
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 670
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 671
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 672
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 673
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 674
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 675
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 676
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 677
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 678
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 679
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 680
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 681
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 682
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 683
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 684
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 685
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 686
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 687
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 688
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 689
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 690
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 691
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 692
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 693
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 694
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 695
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 696
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 697
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 698
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 699
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 700
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 701
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 702
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 703
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 704
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 705
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 706
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 707
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 708
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 709
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 710
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 711
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 712
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 713
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 714
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 715
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 716
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 717
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 718
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 719
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 720
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 721
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 722
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 723
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 724
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 725
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 726
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 727
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 728
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 729
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 730
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 731
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 732
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 733
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 734
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 735
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 736
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 737
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 738
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 739
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 740
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 741
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 742
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 743
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 744
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 745
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 746
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 747
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 748
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 749
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 750
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 751
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 752
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 753
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 754
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 755
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 756
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 757
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 758
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 759
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 760
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 761
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 762
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 763
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 764
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 765
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 766
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 767
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 768
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 769
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 770
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 771
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 772
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 773
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 774
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 775
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 776
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 777
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 778
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 779
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 780
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 781
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 782
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 783
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] GoOffline
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 784
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 785
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 786
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 787
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 788
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 789
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 790
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 791
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 792
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 793
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 794
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 795
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 796
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 797
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 798
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 799
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 800
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 801
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 802
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 803
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 804
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 805
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 806
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 807
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 808
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 809
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 810
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 811
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 812
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 813
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 814
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 815
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 816
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 817
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 818
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 819
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 820
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 821
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 822
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 823
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 824
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 825
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 826
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 827
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 828
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 829
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 830
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 831
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 832
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 833
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 834
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 835
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 836
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 837
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 838
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 839
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 840
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 841
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 842
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 843
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 844
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 845
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 846
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 847
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 848
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 849
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 850
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 851
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryHashtags
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 852
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 853
+[Debug][12/4/2020 7:38:33 PM] QueryMentions
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 854
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 855
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 856
+[Debug][12/4/2020 7:38:33 PM] Retweet
+[Debug][12/4/2020 7:38:33 PM] Tweet
+[Debug][12/4/2020 7:38:33 PM] Tweets received = 857
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 858
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 859
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 860
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] QueryHashtags
+[Debug][12/4/2020 7:38:34 PM] QueryHashtags
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 861
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 862
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 863
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 864
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 865
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] QueryHashtags
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 866
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 867
+[Debug][12/4/2020 7:38:34 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 868
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 869
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 870
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 871
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 872
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 873
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 874
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 875
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 876
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 877
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 878
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 879
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 880
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 881
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 882
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 883
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 884
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 885
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 886
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 887
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 888
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 889
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 890
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 891
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 892
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 893
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 894
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 895
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 896
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 897
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 898
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 899
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 900
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 901
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 902
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 903
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 904
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 905
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 906
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 907
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 908
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 909
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 910
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 911
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 912
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 913
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 914
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 915
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 916
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 917
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 918
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 919
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 920
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 921
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 922
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 923
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 924
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 925
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 926
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 927
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 928
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 929
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 930
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 931
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 932
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 933
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 934
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 935
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 936
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 937
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 938
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 939
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 940
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 941
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 942
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 943
+[Debug][12/4/2020 7:38:34 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 944
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 945
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 946
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 947
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 948
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 949
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 950
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 951
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 952
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 953
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 954
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 955
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 956
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 957
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 958
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 959
+[Debug][12/4/2020 7:38:34 PM] QuerySubscribedTweets
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 960
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 961
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 962
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 963
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 964
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 965
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 966
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 967
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 968
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 969
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 970
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 971
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 972
+[Debug][12/4/2020 7:38:34 PM] QueryMentions
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 973
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 974
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 975
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 976
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 977
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 978
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 979
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 980
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 981
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 982
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 983
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 984
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 985
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 986
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 987
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 988
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 989
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 990
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 991
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 992
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 993
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 994
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 995
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 996
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 997
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 998
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 999
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1000
+[Debug][12/4/2020 7:38:34 PM] 0,1000
+[Debug][12/4/2020 7:38:34 PM] 1,978
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,146
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,4
+[Debug][12/4/2020 7:38:34 PM] 30,5
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,2
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Retweet
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1001
+[Debug][12/4/2020 7:38:34 PM] 0,1001
+[Debug][12/4/2020 7:38:34 PM] 1,979
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,146
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,4
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,2
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1002
+[Debug][12/4/2020 7:38:34 PM] 0,1002
+[Debug][12/4/2020 7:38:34 PM] 1,980
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,147
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,4
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,2
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1003
+[Debug][12/4/2020 7:38:34 PM] 0,1003
+[Debug][12/4/2020 7:38:34 PM] 1,981
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,147
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,4
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1004
+[Debug][12/4/2020 7:38:34 PM] 0,1004
+[Debug][12/4/2020 7:38:34 PM] 1,982
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,147
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,5
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1005
+[Debug][12/4/2020 7:38:34 PM] 0,1005
+[Debug][12/4/2020 7:38:34 PM] 1,983
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,102
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,5
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1006
+[Debug][12/4/2020 7:38:34 PM] 0,1006
+[Debug][12/4/2020 7:38:34 PM] 1,984
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,103
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,5
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] GoOffline
+[Debug][12/4/2020 7:38:34 PM] GoOffline
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1007
+[Debug][12/4/2020 7:38:34 PM] 0,1007
+[Debug][12/4/2020 7:38:34 PM] 1,985
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,103
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,6
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,3
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1008
+[Debug][12/4/2020 7:38:34 PM] 0,1008
+[Debug][12/4/2020 7:38:34 PM] 1,986
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,103
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,6
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,2
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,4
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1009
+[Debug][12/4/2020 7:38:34 PM] 0,1009
+[Debug][12/4/2020 7:38:34 PM] 1,987
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,126
+[Debug][12/4/2020 7:38:34 PM] 8,103
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,6
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,3
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,4
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[Debug][12/4/2020 7:38:34 PM] Tweet
+[Debug][12/4/2020 7:38:34 PM] Tweets received = 1010
+[Debug][12/4/2020 7:38:34 PM] 0,1010
+[Debug][12/4/2020 7:38:34 PM] 1,988
+[Debug][12/4/2020 7:38:34 PM] 2,498
+[Debug][12/4/2020 7:38:34 PM] 3,310
+[Debug][12/4/2020 7:38:34 PM] 4,227
+[Debug][12/4/2020 7:38:34 PM] 5,190
+[Debug][12/4/2020 7:38:34 PM] 6,148
+[Debug][12/4/2020 7:38:34 PM] 7,127
+[Debug][12/4/2020 7:38:34 PM] 8,103
+[Debug][12/4/2020 7:38:34 PM] 9,76
+[Debug][12/4/2020 7:38:34 PM] 10,76
+[Debug][12/4/2020 7:38:34 PM] 11,62
+[Debug][12/4/2020 7:38:34 PM] 12,63
+[Debug][12/4/2020 7:38:34 PM] 13,50
+[Debug][12/4/2020 7:38:34 PM] 14,49
+[Debug][12/4/2020 7:38:34 PM] 15,49
+[Debug][12/4/2020 7:38:34 PM] 16,47
+[Debug][12/4/2020 7:38:34 PM] 17,28
+[Debug][12/4/2020 7:38:34 PM] 18,29
+[Debug][12/4/2020 7:38:34 PM] 19,28
+[Debug][12/4/2020 7:38:34 PM] 20,29
+[Debug][12/4/2020 7:38:34 PM] 21,31
+[Debug][12/4/2020 7:38:34 PM] 22,28
+[Debug][12/4/2020 7:38:34 PM] 23,29
+[Debug][12/4/2020 7:38:34 PM] 24,30
+[Debug][12/4/2020 7:38:34 PM] 25,28
+[Debug][12/4/2020 7:38:34 PM] 26,6
+[Debug][12/4/2020 7:38:34 PM] 27,2
+[Debug][12/4/2020 7:38:34 PM] 28,2
+[Debug][12/4/2020 7:38:34 PM] 29,6
+[Debug][12/4/2020 7:38:34 PM] 30,6
+[Debug][12/4/2020 7:38:34 PM] 31,5
+[Debug][12/4/2020 7:38:34 PM] 32,3
+[Debug][12/4/2020 7:38:34 PM] 33,5
+[Debug][12/4/2020 7:38:34 PM] 34,5
+[Debug][12/4/2020 7:38:34 PM] 35,2
+[Debug][12/4/2020 7:38:34 PM] 36,6
+[Debug][12/4/2020 7:38:34 PM] 37,2
+[Debug][12/4/2020 7:38:34 PM] 38,3
+[Debug][12/4/2020 7:38:34 PM] 39,5
+[Debug][12/4/2020 7:38:34 PM] 40,3
+[Debug][12/4/2020 7:38:34 PM] 41,5
+[Debug][12/4/2020 7:38:34 PM] 42,3
+[Debug][12/4/2020 7:38:34 PM] 43,2
+[Debug][12/4/2020 7:38:34 PM] 44,4
+[Debug][12/4/2020 7:38:34 PM] 45,5
+[Debug][12/4/2020 7:38:34 PM] 46,3
+[Debug][12/4/2020 7:38:34 PM] 47,3
+[Debug][12/4/2020 7:38:34 PM] 48,2
+[Debug][12/4/2020 7:38:34 PM] 49,3
+[INFO][12/5/2020 12:38:34 AM][Thread 0019][remoting-terminator] Shutting down remote daemon.
+[INFO][12/5/2020 12:38:34 AM][Thread 0007][CoordinatedShutdown (akka://Twitter)] Starting coordinated shutdown from CLR termination hook.
+[INFO][12/5/2020 12:38:34 AM][Thread 0019][remoting-terminator] Remote daemon shut down; proceeding with flushing remote transports.
+[INFO][12/5/2020 12:38:34 AM][Thread 0019][akka.tcp://Twitter@127.0.0.1:9002/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FTwitter%40127.0.0.1%3A9001-1] Removing receive buffers for [akka.tcp://Twitter@127.0.0.1:9002]->[akka.tcp://Twitter@127.0.0.1:9001]
+[INFO][12/5/2020 12:38:34 AM][Thread 0018][remoting (akka://Twitter)] Remoting shut down
+[INFO][12/5/2020 12:38:34 AM][Thread 0020][remoting-terminator] Remoting shut down.
+[WARNING][12/5/2020 12:38:34 AM][Thread 0024][TcpServerHandler (akka://Twitter)] Unable to REMOVE channel [[::ffff:127.0.0.1]:9002->[::ffff:127.0.0.1]:64245](Id=07972646) from connection group. May not shut down cleanly.

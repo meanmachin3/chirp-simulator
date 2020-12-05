@@ -11,9 +11,11 @@
 
 ## Build Process
 
-- Download the repository `git clone https://github.com/meanmachin3/gossip-protocol.git`
+- Unzip file `unzip VasuYadav.zip`
 - `dotnet fsi --langversion:preview TwitterEngine.fsx numNodes numTweets` to run Twitter Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 - `dotnet fsi --langversion:preview Main.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
+- `dotnet fsi --langversion:preview ZipfTwitterEngine.fsx numNodes numTweets` to run Twitter Engine script with zipf distribution where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
+- `dotnet fsi --langversion:preview ZipfMain.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 
 ## What is Working
 
@@ -30,8 +32,7 @@ Twitter Engine and User Engine accepts command line parameters as `numNodes` tha
 
 A user needs to be a registered member in order to start tweeting. Whenever a tweet is made by an actor, it is sent to TwitterEngine. TwitterEngine forwards that tweet to the followers of the tweeted person. Every actor is made to simulate like a real person. At any given point in time, each actor can tweet, retweet, subscribe, or search for a tweet with hashtags or mentions.
 
-The Boss actor is responsible for setting users at random, offline, or online. Whenever the user goes offline, all the tweets/retweets it receives are saved temporarily in offline meets and whenever it is online all the messages are delivered to the user. An Offline user cannot search or perform a subscription to another subscriber.
-
+The Boss actor is responsible for setting users at random, offline, or online (Simulates connection and disconnection of user). Whenever the user goes offline, all the tweets/retweets it receives are saved temporarily in offline meets and whenever it is online all the messages are delivered to the user. An Offline user cannot search or perform a subscription to another subscriber.
 ## Zipf
 
 We have performed user distribution based zipf law. Below is a graph of each user with the user count. User 0 has 25 (50/2) subscribers. User 1 has 17 (50/3) subscribers and so on
