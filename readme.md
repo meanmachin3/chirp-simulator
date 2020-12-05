@@ -8,6 +8,13 @@
 - [Implementation](#implementation)
 - [Zipf](#zipf)
 - [Performance](#performance)
+- [Console Output](#console-output)
+  - [Register Account (Client)](#register-account-client)
+  - [Tweet (Client)](#tweet-client)
+  - [Subscribe (Server)](#subscribe-server)
+  - [Subscribe (Client)](#subscribe-client)
+  - [Query by Hashtag (Server)](#query-by-hashtag-server)
+  - [Online/Offline Simulation (Server)](#onlineoffline-simulation-server)
 
 ## Build Process
 
@@ -15,7 +22,7 @@
 - `dotnet fsi --langversion:preview TwitterEngine.fsx numNodes numTweets` to run Twitter Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 - `dotnet fsi --langversion:preview Main.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 - `dotnet fsi --langversion:preview ZipfTwitterEngine.fsx numNodes numTweets` to run Twitter Engine script with zipf distribution where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
-- `dotnet fsi --langversion:preview ZipfMain.fsx numNodes numTweets` to run User Engine script where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
+- `dotnet fsi --langversion:preview ZipfMain.fsx numNodes numTweets` to run User Engine script with zipf distribution where `numNodes` is the number of users you want to run simulator/tester for. `numTweets` is the number of tweets that needs to simulate.
 
 ## What is Working
 
@@ -49,3 +56,30 @@ The interesting find is that the tweet activity despite being totally random amo
 We ran the simulation for a different number of users and the following are the results. It is clear that adding a more actor increase the performance of system i.e (there are more tweets processed per time) implying that the system is capable of handling a larger number of tweets.
 
 ![Number of Tweets vs Time](./docs/number_tweets_time.png)
+
+## Console Output
+
+Below are some of the output from console terminal. The client terminal sends are request to server. This 
+### Register Account (Client)
+
+![Register](./docs/register.png)
+
+### Tweet (Client)
+
+![Tweet](./docs/tweet.png)
+
+### Subscribe (Server)
+
+![Tweet](./docs/subscribe.png)
+
+### Subscribe (Client)
+
+![Tweet](./docs/client_subs.png)
+
+### Query by Hashtag (Server)
+
+![Register](./docs/serverQuery.png)
+
+### Online/Offline Simulation (Server)
+
+![Register](./docs/onoff.png)
