@@ -34,11 +34,15 @@ The Boss actor is responsible for setting users at random, offline, or online. W
 
 ## Zipf
 
+We have performed user distribution based zipf law. Below is a graph of each user with the user count. User 0 has 25 (50/2) subscribers. User 1 has 17 (50/3) subscribers and so on
+
+![Zipf Distribution](./docs/zipfsub.png)
+
 We perform the simulation using the Zipf distribution amongst subscribers, we tried to measure the activity(tweets/retweets) of those users. We found that the more number of subscribers a user has, the more activity it generates in the system.
 
 The interesting find is that the tweet activity despite being totally random among these users also followed a Zipf distribution (Sort of)
 
-![Zipf Distribution](./docs/zipf.png)
+![Zipf Distribution with Tweets](./docs/zipf.png)
 ## Performance
 
 We ran the simulation for a different number of users and the following are the results. It is clear that adding a more actor increase the performance of system i.e (there are more tweets processed per time) implying that the system is capable of handling a larger number of tweets.

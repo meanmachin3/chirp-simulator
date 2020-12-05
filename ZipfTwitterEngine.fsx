@@ -90,8 +90,9 @@ let TwitterEngine (numNodesVal: int) (numTweetsVal: int) (mailbox: Actor<_>) =
                     let mutable users = [|0|]
                     [1..(numNodes/(i+2))] |> List.iter (fun i -> 
                         users <- Array.concat [| users ; [|i|] |]
-                        printfn "User %d subscribed to %A" i users
+                        //printfn "User %d subscribed to %A" i users
                     )
+                    printfn "User %d subscribed to %A" i users
                     followersTweet <- followersTweet.Add(workerName, [| "" |])
                     following <- following.Add(workerName, users)
                 tweetsHastags <- tweetsHastags.Add("", [| "" |])
